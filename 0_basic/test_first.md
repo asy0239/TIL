@@ -67,3 +67,14 @@ ctrl + shift + m 으로 수식 박스 생성
 
 ctrl + b 로 강조 사용
 
+## git , git_hub 사용법
+
+```sh
+$ git init # pwd 에서 관리를 시작, 드라이버를 지정
+$ git remote add origin "url"   # 저장할 git_hub의 저장소 지정 , origin = 저장소이름
+$ git add dir_name # 저장할 목표물 지정 , 스냅샷
+$ git commit -m "message" # 메세지와 함께 git_hub 저장소에 지정
+$ git push origin master  # git_hub에 저장한다 
+$ git status # 지금 스냅샷의 상태를 보여줌
+```
+
