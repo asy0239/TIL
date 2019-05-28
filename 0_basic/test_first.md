@@ -76,5 +76,7 @@ $ git add dir_name # 저장할 목표물 지정 , 스냅샷
 $ git commit -m "message" # 메세지와 함께 git_hub 저장소에 지정
 $ git push origin master  # git_hub에 저장한다 
 $ git status # 지금 스냅샷의 상태를 보여줌
+$ git clone 상대 url teacher_TIL # 상대의 자료를 가져온다
+$ git pull # 저장된 상대 자료위치에서 pull 을 하면 변경사항만 가져온다
 ```
 
