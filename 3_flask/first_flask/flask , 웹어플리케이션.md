@@ -36,3 +36,9 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
+## flask , 웹 어플리케이션 순서
+
+1. client 에서 url로 요청이 들어옴   # request, url
+2. server 에서 url 분석을 통해 그게 맞는 함수가 실행됨  # action
+3. 함수 return 값으로 그 함수에 지정된 html 로 보내어줌 # html
+4. html 받아 화면에 보여줌 # response
