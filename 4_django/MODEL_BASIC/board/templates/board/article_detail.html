@@ -1,0 +1,23 @@
+{% extends 'board/base.html' %}
+
+{% block body %}
+
+
+    <h1>{{ article.title }}</h1>
+    <p>{{ article.content }}</p>
+
+
+
+    <a href="/board/{{ article.id }}/delete/" onclick="return confirm('진짜?')">
+        <button>삭제</button>
+    </a>
+
+    <a href="/board/" onclick="return confirm('진짜?')">
+        <button>목록</button>
+    </a>
+
+    <a href="/board/{{ article.id }}/edit/"><button>새로 글쓰기</button></a>
+
+
+
+{% endblock %}
