@@ -1,0 +1,28 @@
+{% extends 'articles/base.html' %}
+
+{% block body %}
+    <h1>여기는 index 입니다.</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">title</th>
+          <th scope="col">content</th>
+          <th scope="col">method</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for article in articles %}
+        <tr>
+          <th scope="row">{{article.id}}</th>
+          <td>{{article.title}}</td>
+          <td>{{article.content}}</td>
+          <td>
+              <a href="{% url 'articles:detail' article.id %}">보기</a>
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    <img src="https://i.pinimg.com/originals/dd/be/1f/ddbe1f911d676f198bdfc9b2346ac1e4.gif" alt="">
+{% endblock %}

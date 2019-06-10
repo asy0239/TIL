@@ -1,0 +1,15 @@
+{% extends 'articles/base.html' %}
+
+{% block body %}
+<div class="card" >
+  <img src="https://picsum.photos/id/{{article.id}}/700/500" alt="">
+  <div class="card-body">
+    <h5 class="card-title">{{ article.title }}</h5>
+    <p class="card-text">{{article.content}}</p>
+    <a class="btn btn-outline-primary" href="{% url 'articles:index' %}">메인</a>
+    <a class="btn btn-outline-danger"  href="{% url 'articles:delete' article.id %}">삭제</a>
+    <a class="btn btn-outline-warning"  href="{% url 'articles:update' article.id %}">수정</a>
+    <a class="btn btn-outline-dark"  href="{% url 'articles:create' %}">글 쓰기</a>
+  </div>
+</div>
+{% endblock %}
