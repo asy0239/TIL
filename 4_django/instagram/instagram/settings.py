@@ -25,7 +25,7 @@ SECRET_KEY = 'n$2xp%r+si1lq0!t03f%ve(ft&ic4k-d*#15692o_^t6#rapx%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -125,3 +125,5 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')   ## 어떤 폴더에 사진(media파일)을 저장할 지
+
+AUTH_USER_MODEL = 'accounts.User'    ## 앞으로 사용할 user 모델의 이름을 정해줌
